@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MA xmlns:xml="http://www.w3.org/XML/1998/namespace" major_vers="3" minor_vers="2" stream_vers="2">
+  <Info datetime="2025-12-29T11:52:0" showfile="ma fixture builder"/>
+  <FixtureType index="0" name="DMXLeinwand" mode="2Channel">
+    <InfoItems>
+      <Info>Created using MA FixtureBuilder version v1.9.0</Info>
+    </InfoItems>
+    <short_name>DMXLeinw</short_name>
+    <manufacturer>TechnikAG</manufacturer>
+    <short_manufacturer>OHGW</short_manufacturer>
+    <Modules index="0">
+      <Module index="0" name="Module" class="None" beamtype="None" beam_angle="19" beam_intensity="10000">
+        <Body>
+          <Size x="0.5" y="0.5" z="0.5"/>
+        </Body>
+        <ChannelType index="0" attribute="MOVEDOWN" feature="CONTROL" preset="CONTROL" coarse="1">
+          <ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="MOVEDOWN" attribute="MOVEDOWN" feature="CONTROL" preset="CONTROL">
+            <ChannelSet index="0" name="min" from_dmx="0" to_dmx="0"/>
+            <ChannelSet index="1" name="max" from_dmx="255" to_dmx="255"/>
+          </ChannelFunction>
+        </ChannelType>
+        <ChannelType index="1" attribute="MOVEUP" feature="CONTROL" preset="CONTROL" coarse="2">
+          <ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="MOVEUP" attribute="MOVEUP" feature="CONTROL" preset="CONTROL">
+            <ChannelSet index="0" name="min" from_dmx="0" to_dmx="0"/>
+            <ChannelSet index="1" name="max" from_dmx="255" to_dmx="255"/>
+          </ChannelFunction>
+        </ChannelType>
+      </Module>
+    </Modules>
+    <Instances index="1">
+      <Instance index="0" patch="1" module_index="0"/>
+    </Instances>
+    <Wheels index="2"/>
+    <FixtureMacroCollect index="5"/>
+  </FixtureType>
+</MA>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/3.9.0/MA.xsd" major_vers="3" minor_vers="9" stream_vers="0">
+	<Info datetime="2026-01-13T20:46:12" showfile="ohgw default 2026" />
+	<FixtureType index="20" name="MHL1912" mode="15 Channels">
+		<InfoItems>
+			<Info type="Revision" date="2025-12-29T00:00:00">Converted GDTF to grandMA2 fixture type with Share Converter version 1.4.1</Info>
+			<Info type="Revision" date="2017-08-11T00:00:00">Created by Admin </Info>
+			<Info type="Revision" date="2018-03-23T00:00:00">Added Wheelcolors, added Beam Type, Added Beamradius</Info>
+			<Info type="Revision" date="2018-04-17T00:00:00">Added Lowlight values</Info>
+			<Info type="Revision" date="2018-06-12T00:00:00">updated geometries according to 0.86</Info>
+			<Info type="Revision" date="2018-06-26T00:00:00">All other changes according to GDTF 0.86</Info>
+			<Info type="Revision" date="2019-02-25T00:00:00">changed pan/tilt attribute linking</Info>
+			<Info type="Revision" date="2019-09-18T00:00:00">added own geometry structure for standard mode; adjusted geometry offsets regarding to new default models; adjusted real fade times; set DMX invert for Zoom Channel</Info>
+			<Info type="Revision" date="2021-06-22T00:00:00">Updated to GDTF 1.1, Uploaded to GDTF Share.</Info>
+			<Info type="Revision" date="2022-09-23T00:00:00">Rev 1.0, dimmer as base2.0</Info>
+			<Info type="Revision" date="2022-09-23T00:00:00">Geometry changes</Info>
+			<Info type="Revision" date="2022-09-24T00:00:00">Updated Function Triggers</Info>
+			<Info type="Revision" date="2022-09-28T00:00:00">1.0.3</Info>
+			<Info type="Revision" date="2024-02-08T00:00:00">V1.0</Info>
+			<Info type="Revision" date="2024-03-06T00:00:00">MHL1912 Moving Head Wash with Zoom, Uploaded to GDTF Share.</Info>
+			<Info type="Revision" date="2024-03-19T00:00:00">MHL1912 Moving Head Wash with Zoom</Info>
+			<Info type="Revision" date="2024-04-08T00:00:00">MHL1912 Moving Head </Info>
+			<Info>he BeamZ MHL1912 LED moving head kit is a set of powerful wash moving heads designed to light up any stage or dance floor. Each head is powered by 19x 12W RGBW (4-in-1) LEDs with 3 individually controllable sections for creating eye-catching effects and colors. The linear motorized zoom allows you to focus a beam up to 8° or open up to 30° to cover a wider area with ease. Equipped with DMX, built-in auto programs and presets, including a master/slave mode. Perfect for stage shows, productions, events, DJ, Bands, Venues, and more. Supplied as a pair with a custom made heavy-duty road case to protect your fixtures while in transit or storage.</Info>
+			<Info type="Revision" date="2025-12-29T00:00:00">Uploaded%20from%20GDTF, Uploaded to Fixture Share.</Info>
+		</InfoItems>
+		<short_name>MHL1912 Moving </short_name>
+		<manufacturer>BeamZ</manufacturer>
+		<short_manufacturer>BeamZ</short_manufacturer>
+		<Modules index="0">
+			<Module index="0" name="Main Module" class="None" beamtype="None" beam_angle="0" beam_intensity="0">
+				<Model index="26" name="Base" sunshadeType="ExcludeOwnBeam" vertices_have_pos="true" vertices_have_tex0="true" model_type="Model" />
+				<ChannelType index="0" attribute="PAN" feature="POSITION" preset="POSITION" coarse="1" fine="2" default="32768">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="-270" physto="270" subattribute="PAN" subattribute_user_name="Pan" attribute="PAN" attribute_user_name="Pan" feature="POSITION" feature_user_name="Position" preset="POSITION" preset_user_name="Position" />
+				</ChannelType>
+				<ChannelType index="1" attribute="TILT" feature="POSITION" preset="POSITION" coarse="3" fine="4" default="32768">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="-135" physto="135" subattribute="TILT" subattribute_user_name="Tilt" attribute="TILT" attribute_user_name="Tilt" feature="POSITION" feature_user_name="Position" preset="POSITION" preset_user_name="Position" />
+				</ChannelType>
+				<ChannelType index="2" attribute="POSITIONMSPEED" feature="MSPEED" preset="CONTROL" coarse="5">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="POSITIONMSPEED" subattribute_user_name="POSITIONMSPEED" attribute="POSITIONMSPEED" attribute_user_name="Position" feature="MSPEED" feature_user_name="Mspeed" preset="CONTROL" preset_user_name="Control" />
+				</ChannelType>
+				<ChannelType index="3" attribute="ZOOM" feature="FOCUS" preset="FOCUS" coarse="6">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="100" subattribute="ZOOM" subattribute_user_name="Zoom" attribute="ZOOM" attribute_user_name="Zoom" feature="FOCUS" feature_user_name="Focus" preset="FOCUS" preset_user_name="Focus" />
+				</ChannelType>
+				<ChannelType index="4" attribute="DIM" feature="DIMMER" preset="DIMMER" coarse="7">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="DIM" subattribute_user_name="Dim" attribute="DIM" attribute_user_name="Dim" feature="DIMMER" feature_user_name="Dimmer" preset="DIMMER" preset_user_name="Dimmer" />
+				</ChannelType>
+				<ChannelType index="5" attribute="SHUTTER" feature="SHUTTER" preset="BEAM" coarse="8">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="SHUTTER" subattribute_user_name="Shutter" attribute="SHUTTER" attribute_user_name="Shutter" feature="SHUTTER" feature_user_name="Shutter" preset="BEAM" preset_user_name="Beam" />
+				</ChannelType>
+				<ChannelType index="6" attribute="COLORRGB1" feature="COLORRGB" preset="COLOR" coarse="9" highlight_value="100" color="ff0000">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="COLORRGB1" subattribute_user_name="R" attribute="COLORRGB1" attribute_user_name="R" feature="COLORRGB" feature_user_name="MixColor" preset="COLOR" preset_user_name="Color" />
+				</ChannelType>
+				<ChannelType index="7" attribute="COLORRGB2" feature="COLORRGB" preset="COLOR" coarse="10" highlight_value="100" color="00ff00">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="COLORRGB2" subattribute_user_name="G" attribute="COLORRGB2" attribute_user_name="G" feature="COLORRGB" feature_user_name="MixColor" preset="COLOR" preset_user_name="Color" />
+				</ChannelType>
+				<ChannelType index="8" attribute="COLORRGB3" feature="COLORRGB" preset="COLOR" coarse="11" highlight_value="100" color="0000ff">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="COLORRGB3" subattribute_user_name="B" attribute="COLORRGB3" attribute_user_name="B" feature="COLORRGB" feature_user_name="MixColor" preset="COLOR" preset_user_name="Color" />
+				</ChannelType>
+				<ChannelType index="9" attribute="COLORRGB5" feature="COLORRGB" preset="COLOR" coarse="12" default="255" color="ffffff">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="COLORRGB5" subattribute_user_name="White" attribute="COLORRGB5" attribute_user_name="White" feature="COLORRGB" feature_user_name="MixColor" preset="COLOR" preset_user_name="Color" />
+				</ChannelType>
+				<ChannelType index="10" attribute="MACROS" feature="MACRO" preset="CONTROL" coarse="13">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="MACROSELECT" subattribute_user_name="Select" attribute="MACROS" attribute_user_name="Macros" feature="MACRO" feature_user_name="Macro" preset="CONTROL" preset_user_name="Control">
+						<ChannelSet index="0" name="No function" from_dmx="0" to_dmx="29" />
+						<ChannelSet index="1" name="Red " from_dmx="30" to_dmx="39" />
+						<ChannelSet index="2" name="Green" from_dmx="40" to_dmx="49" />
+						<ChannelSet index="3" name="Blue" from_dmx="50" to_dmx="59" />
+						<ChannelSet index="4" name="Red+green" from_dmx="60" to_dmx="69" />
+						<ChannelSet index="5" name="Red+blue" from_dmx="70" to_dmx="79" />
+						<ChannelSet index="6" name="Green+blue" from_dmx="80" to_dmx="89" />
+						<ChannelSet index="7" name="RGBW" from_dmx="90" to_dmx="139" />
+						<ChannelSet index="8" name="Color pulse change" from_dmx="140" to_dmx="169" />
+						<ChannelSet index="9" name="Color gradual change  " from_dmx="170" to_dmx="199" />
+						<ChannelSet index="10" name="Color jump change" from_dmx="200" to_dmx="208" />
+						<ChannelSet index="11" name="Auto effect  1" from_dmx="209" to_dmx="218" />
+						<ChannelSet index="12" name="Auto effect  2" from_dmx="219" to_dmx="228" />
+						<ChannelSet index="13" name="Auto effect  3" from_dmx="229" to_dmx="238" />
+						<ChannelSet index="14" name="Auto effect 4" from_dmx="239" to_dmx="255" />
+					</ChannelFunction>
+				</ChannelType>
+				<ChannelType index="11" attribute="PLAYSPEED" feature="GOBO" preset="GOBO" coarse="14">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="PlaySpeed" subattribute_user_name="PlaySpeed" attribute="PLAYSPEED" attribute_user_name="PlaySpeed" feature="GOBO" feature_user_name="Gobo" preset="GOBO" preset_user_name="Gobo" />
+				</ChannelType>
+				<ChannelType index="12" attribute="BEAMRESET" feature="RESET" preset="CONTROL" coarse="15">
+					<ChannelFunction index="0" from="0" to="100" min_dmx_24="0" max_dmx_24="16777215" physfrom="0" physto="1" subattribute="BEAMRESET" subattribute_user_name="BeamReset" attribute="BEAMRESET" attribute_user_name="Beam" feature="RESET" feature_user_name="Reset" preset="CONTROL" preset_user_name="Control" />
+				</ChannelType>
+			</Module>
+		</Modules>
+		<Instances index="1">
+			<Instance index="0" module_index="0" />
+		</Instances>
+		<Wheels index="2" />
+		<VirtualFunctionBlocks index="3" />
+		<FixtureMacroCollect index="5">
+			<FixtureMacro index="0">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="1">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="34" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="2">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="45" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="3">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="55" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="4">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="64" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="5">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="75" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="6">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="84" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="7">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="115" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="8">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="154" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="9">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="184" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="10">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="204" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="11">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="214" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="12">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="223" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="13">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="233" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+			<FixtureMacro index="14">
+				<PhysicalFeatures>
+					<PhysicalFeature subattribute="MACROSELECT" from_value="0" to_value="1" />
+				</PhysicalFeatures>
+				<FixtureMacroStep index="0" duration="5" dmx_value="255" attribute="MACROS" instance_index="0" />
+				<FixtureMacroStep index="1" duration="1" attribute="MACROS" instance_index="0" />
+			</FixtureMacro>
+		</FixtureMacroCollect>
+		<Body />
+		<AutoPresets index="4" />
+		<RdmNotifications index="6">
+			<RdmNotification index="0" Type="Absent" Subcategory="RDM Warning" />
+		</RdmNotifications>
+	</FixtureType>
+</MA>
